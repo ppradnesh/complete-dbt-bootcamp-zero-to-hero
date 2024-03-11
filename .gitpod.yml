@@ -1,3 +1,6 @@
+image:
+  file: .gitpod.Dockerfile
+  
 additionalRepositories:
   - url: https://github.com/AltimateAI/sample_dbt_projects
   - url: https://github.com/ppradnesh/complete-dbt-bootcamp-zero-to-hero
@@ -6,5 +9,8 @@ workspaceLocation: complete-dbt-bootcamp-zero-to-hero/project.code-workspace # R
 
 tasks:
   - init: pip install -r requirements.txt
+    command: |
+      mkdir ~/.dbt; 
+      cp ./profiles.yml ~/.dbt/
 
 

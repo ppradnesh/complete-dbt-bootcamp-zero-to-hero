@@ -78,3 +78,10 @@ All the best,
 Zoltan C. Toth
 
 Miklos Petridisz
+
+#### Dbt profiles setup in Gitpod 
+- Dbt profiles location: [./profiles.yml](./profiles.yml)
+- The profiles.yml file will be moved to `~/.dbt/` directory whenever a new workspace is started
+- If there is any modification in ./profile.yml file, 
+    - option 1: push the changes to github repo and open a new workspace
+    - option 2: run this command: `cp ./profiles.yml ~/.dbt/` to move the profiles to .dbt directory
