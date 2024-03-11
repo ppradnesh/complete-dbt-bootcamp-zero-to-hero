@@ -6,7 +6,7 @@
         "path": "." // Main repo that you will open in Gitpod
       },
       {
-        "path": "../complete-dbt-bootcamp-zero-to-hero"
+        "path": "../sample_dbt_projects"
       }
     ]
   }
