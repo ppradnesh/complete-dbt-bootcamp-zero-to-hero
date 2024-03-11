@@ -1,0 +1,27 @@
+default:
+  outputs:
+    dev:
+      account: "{{ env_var('DBT_LEARN_ACCOUNT') }}"
+      database: AIRBNB
+      password: "{{ env_var('DBT_LEARN_PASSWORD') }}"
+      role: transform
+      schema: DEV
+      threads: 1
+      type: snowflake
+      user: dbt
+      warehouse: COMPUTE_WH
+  target: dev
+
+jaffle_shop:
+  outputs:
+    dev:
+      account: "{{ env_var('JAFFLE_SHOP_ACCOUNT') }}"
+      database: analytics
+      password: "{{ env_var('JAFFLE_SHOP_PASSWORD') }}"
+      role: ACCOUNTADMIN
+      schema: jaffle_shop
+      threads: 1
+      type: snowflake
+      user: juleszobi
+      warehouse: COMPUTE_WH
+  target: dev

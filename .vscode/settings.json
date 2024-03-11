@@ -1,0 +1,6 @@
+{
+    "terminal.integrated.env.linux": {
+      "DBT_PROFILES_DIR": "/workspace/complete-dbt-bootcamp-zero-to-hero"
+    }
+  }
+  
